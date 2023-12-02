@@ -1,0 +1,48 @@
+.center {
+    text-align: center;
+}
+
+.purplebox {
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+}
+
+.insertbutton {
+    border: none;
+    cursor: pointer;
+}
+
+.insertbutton:hover {
+    background-color: brown;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 2px 10px 10px 10px;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+
+
+.item>p:nth-child(1) {
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.item>p:nth-child(2) {
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+}
+
+.item>button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.item>button:hover {
+    color: red;
+}

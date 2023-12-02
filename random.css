@@ -1,0 +1,38 @@
+form>* {
+    display: block;
+    width: 100%;
+}
+
+
+body {
+    width: 500px;
+    margin: 100px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+textarea,
+input {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input {
+    height: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+li {
+    display: block;
+}

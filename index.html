@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="random.css">
+    <link rel="stylesheet" href="classes.css">
+
+</head>
+
+
+<body>
+
+    <header class="center purplebox">
+        <h1>TODOLIST</h1>
+    </header>
+    <main>
+        <form>
+            <h2>Nueva tarea</h2>
+            <label for="descriptionInput">Escribe la descripción de la tarea</label>
+            <textarea id="descriptionInput"></textarea>
+            <label>Fecha límite</label>
+            <input id="dateInput" type="date" />
+            <button id="mySubmitButton" class="center purplebox insertbutton">INSERTAR</button>
+        </form>
+        <section>
+            <h2>Tareas</h2>
+            <ul id="list">
+            </ul>
+        </section>
+    </main>
+    
+    <script src="./js/functionality.js"></script>
+
+    <script>
+        renderListOfTasks()
+    </script>
+
+</body>
+
+
+</html>
