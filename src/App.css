@@ -1,11 +1,9 @@
-/* Importar la fuente Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Estilo general */
 body {
   width: 500px;
   margin: 100px auto;
-  font-family: 'Poppins', sans-serif; /* Aplicar la nueva fuente */
+  font-family: 'Poppins', sans-serif;
   background-color: #f5f5f5;
   color: #333;
 }
@@ -15,7 +13,6 @@ main {
   margin: 0 auto;
 }
 
-/* Encabezado */
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -29,7 +26,6 @@ header h1 {
   border-radius: 10px;
 }
 
-/* Formulario */
 form {
   background-color: white;
   border: 1px solid #ddd;
@@ -37,7 +33,7 @@ form {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif; /* Fuente para todo el formulario */
+  font-family: 'Poppins', sans-serif;
 }
 
 form * {
@@ -53,14 +49,14 @@ input {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif; /* Fuente para los inputs */
+  font-family: 'Poppins', sans-serif;
   transition: border-color 0.3s, background-color 0.3s;
 }
 
 textarea:focus,
 input:focus {
   border-color: blueviolet;
-  background-color: #f9f9ff; /* Ligero cambio de fondo al enfocar */
+  background-color: #f9f9ff;
   outline: none;
 }
 
@@ -71,7 +67,7 @@ button {
   border: none;
   cursor: pointer;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif; /* Fuente para los botones */
+  font-family: 'Poppins', sans-serif;
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
@@ -82,7 +78,6 @@ button:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Lista de tareas */
 section {
   margin-top: 20px;
 }
@@ -124,10 +119,23 @@ ul {
   color: blueviolet;
   font-size: 14px;
   text-decoration: underline;
-  font-family: 'Poppins', sans-serif; /* Fuente para el botón de eliminar */
+  font-family: 'Poppins', sans-serif;
   transition: color 0.3s;
 }
 
 .item > button:hover {
   color: red;
+}
+
+.error {
+  background-color: #ffe6e6;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
