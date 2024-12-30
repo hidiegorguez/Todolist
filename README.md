@@ -1,6 +1,6 @@
 # TODO LIST Application
 
-![Screenshot of the TODO LIST application](./src/assets/images/screenshot.png)
+![Screenshot of the TODO LIST application](./src/assets/images/image.png)
 
 A modern and simple **TODO LIST** application built with **React** and **Vite**. This application allows users to manage their tasks efficiently, with features such as task creation, deletion, and due date tracking.
 
