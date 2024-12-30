@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# TODO LIST Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screenshot of the TODO LIST application](./assets/images/screenshot.png)
 
-Currently, two official plugins are available:
+A modern and simple **TODO LIST** application built with **React** and **Vite**. This application allows users to manage their tasks efficiently, with features such as task creation, deletion, and due date tracking.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Add tasks with a title and a due date.
+- Automatically assigns "Unnamed Task" for tasks without a title.
+- Prevents duplicate task names.
+- Clean and modern user interface.
+- Built with React for fast and dynamic user experience.
+- Powered by Vite for optimized performance during development and production.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+Follow these steps to set up and run the project locally:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 16+ recommended)
+- [Git](https://git-scm.com/)
+
+
+### Steps:
+1. Clone the repository:
+  Run the following command to clone the repository:
+  ```bash
+  git clone https://github.com/hidiegorguez/Todolist
+  ```
+
+2. Navigate to the project directory:
+Use the following command to move into the project folder:
+```bash
+cd <project_directory>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Install dependencies:
+Install the required dependencies by running:
+```bash
+npm install
+```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. Start the development server:
+Launch the application locally by running:
+```bash
+npm run dev
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Then open your browser and visit http://localhost:5173
+
+5. Build for production:
+To generate an optimized build for deployment, use:
+```bash
+npm run build
+```
+
+6. Preview the production build:
+  Preview the production build locally using:
+```bash
+npm run preview
 ```
